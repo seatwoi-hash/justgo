@@ -743,7 +743,7 @@ const Header = ({ title }: { title: string }) => (
         <div className="flex items-center gap-2">
             <Navigation className="text-primary fill-primary" size={20} />
             <h1 className="font-sans font-black italic tracking-widest text-[#FF5F00] text-lg uppercase">
-                APEX VITALITY
+                JUST GO
             </h1>
         </div>
         <button className="text-white relative">
@@ -1262,7 +1262,7 @@ export default function App() {
 
     return (
         <div className="min-h-screen bg-background selection:bg-primary selection:text-black">
-            <Header title="Apex Vitality" />
+            <Header title="Just go" />
 
             <main className="max-w-md mx-auto">
                 <AnimatePresence mode="wait">
