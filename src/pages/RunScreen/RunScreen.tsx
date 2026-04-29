@@ -44,7 +44,8 @@ export const RunScreen: React.FC = () => {
         <span className="bg-surface-lvl2 text-white text-[10px] font-bold px-3 py-1 rounded tracking-widest uppercase">
           БИБЛИОТЕКА
         </span>
-                <span className="bg-primary/20 text-primary text-[10px] font-bold px-3 py-1 rounded tracking-widest uppercase">
+                <span
+                    className="bg-primary/20 text-primary text-[10px] font-bold px-3 py-1 rounded tracking-widest uppercase">
           PRO ДОСТУП
         </span>
             </div>
@@ -53,6 +54,33 @@ export const RunScreen: React.FC = () => {
             <p className="text-white/60 text-sm mb-8">
                 Тренировки высокой точности для улучшения скорости, выносливости и техники бега.
             </p>
+
+            <button
+                className="bg-primary text-black px-4 py-2 flex items-center gap-2 font-black uppercase text-[10px] tracking-widest rounded-soft mr-4 mb-6">
+                <Plus size={16}/> Добавить цель
+            </button>
+
+            {/* Прогресс */}
+            <div className="bg-surface-lvl1 border border-surface-border rounded-soft p-6 mb-8">
+                <div className="flex justify-between items-end mb-2">
+                    <h4 className="font-mono text-[10px] font-bold text-white/40 tracking-widest uppercase">
+                        НЕДЕЛЬНЫЙ ПРОГРЕСС
+                    </h4>
+                    <div className="flex items-center gap-1 text-primary">
+                        <TrendingUp size={14}/>
+                        <span className="font-sans font-bold">+2.1</span>
+                    </div>
+                </div>
+                <div className="flex items-baseline gap-1 mb-3">
+                    <span className="text-2xl font-black italic">12.4</span>
+                    <span className="text-white/40 font-bold">км</span>
+                </div>
+                <div className="h-1.5 bg-surface-lvl2 overflow-hidden mb-2">
+                    <div className="h-full bg-primary w-[65%]"/>
+                </div>
+                <span className="text-[10px] font-bold text-white/40 tracking-widest">
+          65% ОТ НЕДЕЛЬНОЙ ЦЕЛИ
+        </span>
 
             {/* Категории */}
             <div className="flex gap-2 mb-8">
@@ -70,7 +98,8 @@ export const RunScreen: React.FC = () => {
             </div>
 
             {/* Основное упражнение */}
-            <div className="bg-surface-lvl1 border border-surface-border rounded-soft overflow-hidden mb-6 relative min-h-[300px] flex flex-col justify-end p-6">
+            <div
+                className="bg-surface-lvl1 border border-surface-border rounded-soft overflow-hidden mb-6 relative min-h-[300px] flex flex-col justify-end p-6">
                 <img
                     src="https://picsum.photos/seed/athlete1/800/600"
                     alt="Бегун"
@@ -79,11 +108,13 @@ export const RunScreen: React.FC = () => {
                 />
                 <div className="relative z-10">
                     <div className="flex gap-2 mb-3">
-            <span className="bg-surface-lvl2 text-white text-[10px] font-bold px-2 py-0.5 border border-white/20 uppercase">
+            <span
+                className="bg-surface-lvl2 text-white text-[10px] font-bold px-2 py-0.5 border border-white/20 uppercase">
               СКОРОСТЬ
             </span>
-                        <span className="bg-primary text-black text-[10px] font-black px-2 py-0.5 flex items-center gap-1 uppercase">
-              <Zap size={10} fill="black" /> ВЫСОКАЯ
+                        <span
+                            className="bg-primary text-black text-[10px] font-black px-2 py-0.5 flex items-center gap-1 uppercase">
+              <Zap size={10} fill="black"/> ВЫСОКАЯ
             </span>
                     </div>
                     <h3 className="text-3xl font-black mb-2">400м Повторы на дорожке</h3>
@@ -95,50 +126,32 @@ export const RunScreen: React.FC = () => {
                     <div className="flex items-center justify-between">
                         <div className="flex gap-4">
                             <div className="flex items-center gap-1.5 text-white/60">
-                                <Timer size={14} />
+                                <Timer size={14}/>
                                 <span className="font-mono text-xs font-bold">45 МИН</span>
                             </div>
                             <div className="flex items-center gap-1.5 text-white/60">
-                                <TrendingUp size={14} />
+                                <TrendingUp size={14}/>
                                 <span className="font-mono text-xs font-bold">8 ПОВТОРОВ</span>
                             </div>
                         </div>
-                        <button className="bg-primary text-black h-10 px-6 font-black uppercase text-xs tracking-widest hover:opacity-90 active:scale-95 transition-all rounded-soft">
+                        <button
+                            className="bg-primary text-black h-10 px-6 font-black uppercase text-xs tracking-widest hover:opacity-90 active:scale-95 transition-all rounded-soft">
                             СТАРТ
                         </button>
                     </div>
                 </div>
             </div>
 
-            {/* Прогресс */}
-            <div className="bg-surface-lvl1 border border-surface-border rounded-soft p-6 mb-8">
-                <div className="flex justify-between items-end mb-2">
-                    <h4 className="font-mono text-[10px] font-bold text-white/40 tracking-widest uppercase">
-                        НЕДЕЛЬНЫЙ ПРОГРЕСС
-                    </h4>
-                    <div className="flex items-center gap-1 text-primary">
-                        <TrendingUp size={14} />
-                        <span className="font-sans font-bold">+2.1</span>
-                    </div>
-                </div>
-                <div className="flex items-baseline gap-1 mb-3">
-                    <span className="text-2xl font-black italic">12.4</span>
-                    <span className="text-white/40 font-bold">км</span>
-                </div>
-                <div className="h-1.5 bg-surface-lvl2 overflow-hidden mb-2">
-                    <div className="h-full bg-primary w-[65%]" />
-                </div>
-                <span className="text-[10px] font-bold text-white/40 tracking-widest">
-          65% ОТ НЕДЕЛЬНОЙ ЦЕЛИ
-        </span>
+
 
                 <div className="mt-8 pt-6 border-t border-surface-border">
                     <h4 className="font-mono text-[10px] font-bold text-white/40 tracking-widest uppercase mb-4">
                         СЛЕДУЮЩАЯ ТРЕНИРОВКА
                     </h4>
                     <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 bg-surface-lvl2 rounded-soft flex items-center justify-center text-primary">
-                            <Target size={24} />
+                        <div
+                            className="w-12 h-12 bg-surface-lvl2 rounded-soft flex items-center justify-center text-primary">
+                            <Target size={24}/>
                         </div>
                         <div>
                             <p className="font-bold">Динамическая растяжка</p>
@@ -151,7 +164,8 @@ export const RunScreen: React.FC = () => {
             {/* Все тренировки */}
             <div className="flex justify-between items-center mb-6">
                 <h3 className="text-2xl font-black italic">Все тренировки</h3>
-                <button className="text-primary font-mono text-[10px] font-bold tracking-widest uppercase hover:underline">
+                <button
+                    className="text-primary font-mono text-[10px] font-bold tracking-widest uppercase hover:underline">
                     ВСЕ
                 </button>
             </div>
@@ -166,7 +180,8 @@ export const RunScreen: React.FC = () => {
                                 className="w-full h-full object-cover"
                                 referrerPolicy="no-referrer"
                             />
-                            <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md px-2 py-1 border border-white/20">
+                            <div
+                                className="absolute top-4 left-4 bg-black/60 backdrop-blur-md px-2 py-1 border border-white/20">
                                 <span className="text-[10px] font-bold tracking-widest uppercase">{item.type}</span>
                             </div>
                         </div>
@@ -177,10 +192,11 @@ export const RunScreen: React.FC = () => {
                             </p>
                             <div className="flex justify-between items-center">
                                 <div className="flex items-center gap-1 text-white/60">
-                                    <Timer size={12} />
+                                    <Timer size={12}/>
                                     <span className="text-[10px] font-bold uppercase">{item.duration}</span>
                                 </div>
-                                <span className={`text-[10px] font-bold uppercase tracking-widest ${item.color || 'text-white/60'}`}>
+                                <span
+                                    className={`text-[10px] font-bold uppercase tracking-widest ${item.color || 'text-white/60'}`}>
                   {item.level}
                 </span>
                             </div>

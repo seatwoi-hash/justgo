@@ -23,7 +23,7 @@ export const ScheduleScreen: React.FC = () => {
                     </p>
                 </div>
                 <button className="bg-primary text-black px-4 py-2 flex items-center gap-2 font-black uppercase text-[10px] tracking-widest rounded-soft">
-                    <Plus size={16} /> НОВАЯ ТРЕНИРОВКА
+                    <Plus size={16} /> Редактировать расписание
                 </button>
             </div>
 
